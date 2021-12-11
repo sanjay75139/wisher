@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Sign-In</title>
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="css/addons/datatables.min.css" rel="stylesheet">
+
+</head>
+<style>
+  body {
+height: 100%;
+background-color: #252525;
+text-decoration-color:#6c757d !important;
+}
+.animated{
+  animation-duration: 7s;
+}
+.form-div{
+  width: 300px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #6c757d;
+}
+.frm-ctrl{
+  margin-top: 30px !important;
+  margin-left: 60px !important;
+  width:180px;
+  color: #6c757d !important;
+  border-bottom: 1px solid #6c757d !important;
+}
+.frm-ctrl-last{
+  margin-top: 30px !important;
+  margin-bottom: 40px !important;
+  margin-left: 60px !important;
+  width:180px;
+  color: #6c757d !important;
+}
+.btn-outline-warning{
+  border: 2px solid #6c757d !important;
+}
+a{
+  color: #6c757d !important;
+}
+.navbar {
+  background: #212529 !important;
+}
+</style>
+<header>
+  <nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top lighten-1">
+  <a class="navbar-brand" href="#"><strong>Wisher</strong></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
+    aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home
+        </a>
+      </li>
+      <!-- <li class="nav-item active">
+        <a class="nav-link" href="/new">New Event Schedule</a>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link" href="/features">Features</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item avatar dropdown">
+        <a class="nav-link p-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="https://img.icons8.com/officel/344/person-male.png" class="rounded-circle z-depth-0"
+            alt="avatar image" height="35">
+        </a>
+        <div class="dropdown-menu" style="background: #252525; border: 1px solid #6c757d;" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/signin">Signin</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+</header>
+<body>
+
+  <div style="margin-top: 50px;">
+    <div class="flex-center flex-column">
+      <p class="animated fadeIn text-muted" style="padding-top:200px;padding-bottom:10px;">
+        <font size="100px">Reset Password</font>
+      </p>
+      <div class="animated fadeIn text-muted form-div md-form" >
+        <form class="" action="index" method="post">
+          <input type="text" class="form-control frm-ctrl" name="emailid" placeholder="E-Mail Id">
+          <button type="submit" class="btn btn-outline-warning waves-effect frm-ctrl-last">Reset</button>
+        </form>
+      </div>
+      <div class="alert alert-dark" role="alert" style="display:none;">
+        A reset link has been sent to your email id. Kindly check it out!
+      </div>
+      <p class="animated fadeIn text-muted bottom" style="padding-top:100px;padding-bottom:0px;">
+        <a href="signin" style="font-size:20px;">Back to login</a>
+      </p>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript"></script>
+  <script type="text/javascript" src="js/addons/datatables.min.js"></script>
+
+
+</body>
+</html>

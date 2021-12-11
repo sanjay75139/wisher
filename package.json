@@ -1,0 +1,28 @@
+{
+  "name": "wisher",
+  "version": "1.0.0",
+  "description": "wisher test app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "nodemon": "nodemon app.js",
+    "db-populate": "npx sequelize-cli db:migrate"
+  },
+  "author": "JK",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "md5": "^2.3.0",
+    "mysql2": "^2.2.5",
+    "node-schedule": "^1.3.2",
+    "nodemailer": "^6.4.6",
+    "random": "^2.2.0",
+    "sequelize": "^6.11.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.3.0"
+  }
+}

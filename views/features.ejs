@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Features</title>
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="css/addons/datatables.min.css" rel="stylesheet">
+
+</head>
+<style>
+  body {
+    height: 100%;
+    background-color: #252525;
+  }
+  .animated{
+    animation-duration: 7s;
+  }
+  a{
+    color: #6c757d !important;
+  }
+  .navbar.navbar-dark .navbar-nav .nav-item.active>.nav-link{
+    background-color: #252525 !important;
+    border-bottom: 3px solid #6c757d;
+  }
+  .navbar a:hover {
+    border-bottom: 3px solid #6c757d;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+  }
+  .navbar {
+  background: #212529 !important;
+}
+  </style>
+  <header>
+    <nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top lighten-1">
+    <a class="navbar-brand" href="#"><strong>Wisher</strong></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
+      aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <% if(loggedIn) { %>
+          <li class="nav-item">
+            <a class="nav-link" href="/new">New Event Schedule</a>
+          </li>
+        <% } %>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">Request a feature</a>
+        </li> -->
+      </ul>
+      <ul class="navbar-nav ml-auto nav-flex-icons">
+        <li class="nav-item avatar dropdown">
+          <a class="nav-link p-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="https://img.icons8.com/officel/344/person-male.png" class="rounded-circle z-depth-0"
+              alt="avatar image" height="35">
+          </a>
+          <div class="dropdown-menu" style="background: #252525; border: 1px solid #6c757d;" aria-labelledby="navbarDropdown">
+            <% if(loggedIn) { %>
+              <a class="dropdown-item" href="/logout">Signout</a>
+            <% } else { %>
+              <a class="dropdown-item" href="/signin">Signin</a>
+            <% } %>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  </header>
+<body>
+
+  <div style="margin-top: 50px;">
+    <div class="flex-center flex-column">
+      <div class="animated fadeIn">
+      <div class="container z-depth-1 my-5 py-5">
+        <section>
+          <style>
+            .border-top {
+              border-top-width: 2px !important;
+            }
+  	      </style>
+          <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4"></h6>
+          <h3 class="font-weight-bold text-center grey-text text-uppercase pb-2">Our Features</h3>
+          <hr class="w-header my-4">
+          <p class="lead text-center text-muted pt-2 mb-5"></p>
+
+          <div class="row d-flex justify-content-center">
+
+            <div class="col-md-6 col-lg-5 col-xl-4">
+              <h5 class="font-weight-normal border-top border-secondary pt-4 mb-4"><a class="dark-grey-text" href="#">Free Service</a></h5>
+              <p class="text-muted mb-5 pb-md-3">We created this application keeping you people on our mind and thats why we had made this service free for use around the globe.</p>
+            </div>
+
+            <div class="col-md-6 col-lg-5 col-xl-4">
+              <h5 class="font-weight-normal border-top border-secondary pt-4 mb-4"><a class="dark-grey-text"
+                href="#">Automated</a></h5>
+              <p class="text-muted mb-5 pb-md-3">Give your greeting details for once and we will wish your loved ones on behalf of you at your desired timing.</p>
+            </div>
+
+            <div class="w-100"></div>
+
+            <div class="col-md-6 col-lg-5 col-xl-4">
+              <h5 class="font-weight-normal border-top border-secondary pt-4 mb-4"><a class="dark-grey-text"
+                href="#">Ad Free Application</a></h5>
+              <p class="text-muted mb-5">Tired of annoying ads in loads of website? Don't worry, we got that covered!. In order to give our useres an enhanced and fluid experience we have made this application ad-free.</p>
+            </div>
+
+            <div class="col-md-6 col-lg-5 col-xl-4">
+              <h5 class="font-weight-normal border-top border-secondary pt-4 mb-4"><a class="dark-grey-text"
+                href="#">Privacy terms</a></h5>
+                <p class="text-muted mb-5">Sometimes you may think "Hey how can you trust these people?". Well, that's a good question!. We guarentee you that we don't collect any of our user's information for any kind of internal or external use.</p>
+            </div>
+
+          </div>
+        </section>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript"></script>
+  <script type="text/javascript" src="js/addons/datatables.min.js"></script>
+
+</body>
+</html>
